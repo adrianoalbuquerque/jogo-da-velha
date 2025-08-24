@@ -1,32 +1,92 @@
-# JogoDaVelha
+# Jogo da Velha
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+Clone funcional do clássico jogo da velha, desenvolvido com **Angular 10+**, **TypeScript**, **HTML5** e **SCSS**.  
+O projeto organiza o tabuleiro e os componentes de forma modular, separando **lógica do jogo** e interface, garantindo manutenção e escalabilidade.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- Tabuleiro interativo 3x3 com suporte a dois jogadores
+- Detecção automática de vitória e empate
+- Feedback visual para jogadas e resultados
+- Estrutura modular de componentes Angular
+- Testes unitários cobrindo a lógica do jogo e comportamento dos componentes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Link de Acesso
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Veja o jogo funcionando online: [Jogo da velha clássico](http://adriano-albuquerque-jogo-da-velha.s3-website.us-east-2.amazonaws.com/#)
 
-## Result
+---
 
-Access the result of the application by clicking [here](http://adriano-albuquerque-jogo-da-velha.s3-website.us-east-2.amazonaws.com/#).
+## Tecnologias Utilizadas
 
-## Running unit tests
+- **Angular 10+** (via Angular CLI)
+- **TypeScript**
+- **HTML5 / SCSS**
+- **Node.js** e **npm** para execução e gerenciamento de dependências
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Mapa do Projeto
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Estrutura principal do repositório:
 
-## Further help
+````bash
+jogo-da-velha/
+│
+├─ src/
+│ ├─ app/
+│ │ ├─ components/
+│ │ │ ├─ board/ # Tabuleiro do jogo
+│ │ │ └─ cell/ # Células individuais
+│ │ ├─ services/ # Serviços para lógica do jogo
+│ │ └─ app.module.ts
+│ ├─ assets/ # Imagens e recursos
+│ └─ styles.scss # Estilos globais
+│
+├─ angular.json
+├─ package.json
+└─ README.md
+````
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# jogo-da-velha
+## Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/adrianoalbuquerque/jogo-da-velha.git
+cd jogo-da-velha
+````
+
+Instale as dependências:
+
+```bash
+npm install
+````
+
+## Execução
+
+Para rodar o projeto localmente:
+
+```bash
+ng serve
+````
+
+## Próximos Passos / Melhorias Futuras
+
+- Adicionar modo contra a máquina (IA simples ou algoritmo Minimax)
+- Salvar histórico de partidas localmente
+- Implementar multiplayer online via WebSocket ou Firebase
+- Melhorias de interface e animações adicionais
+
+## Contribuição
+
+Contribuições são bem-vindas! Abra issues ou envie pull requests para colaborar com melhorias.
+
+## Licença
+
+Este projeto está sob a licença MIT.
